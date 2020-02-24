@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="121cebf0-471c-4a69-a3ab-e48b10dcf8ba" name="Default Changelist" comment="" />
+    <list default="true" id="121cebf0-471c-4a69-a3ab-e48b10dcf8ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud-alibaba-feign-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-alibaba-feign-consumer/src/main/java/com/aladdin/cloud/alibaba/feign/consumer/NacosConsumerFeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-alibaba-feign-consumer/src/main/java/com/aladdin/cloud/alibaba/feign/consumer/controller/NacosConsumerFeignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-alibaba-feign-consumer/src/main/java/com/aladdin/cloud/alibaba/feign/consumer/service/NacosProviderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-alibaba-feign-consumer/src/main/resource/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/src/main/java/com/aladdin/cloud/alibaba/nacos/provider/controller/NacosProviderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/src/main/java/com/aladdin/cloud/alibaba/nacos/consumer/controller/NacosConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/src/main/java/com/aladdin/cloud/alibaba/nacos/consumer/controller/NacosConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/src/main/resource/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/src/main/resource/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/target/classes/com/aladdin/cloud/alibaba/nacos/consumer/controller/NacosConsumerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-consumer/target/classes/com/aladdin/cloud/alibaba/nacos/consumer/controller/NacosConsumerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/src/main/java/com/aladdin/cloud/alibaba/NacosProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/src/main/java/com/aladdin/cloud/alibaba/nacos/provider/NacosProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/src/main/java/com/aladdin/cloud/alibaba/controller/NacosProviderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/target/classes/com/aladdin/cloud/alibaba/NacosProviderApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-alibaba-nacos-provider/target/classes/com/aladdin/cloud/alibaba/controller/NacosProviderController.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cloud-alibaba-nacos-provider" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -38,7 +58,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YCN3voklcu6W5raYtqoA84ss91" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,16 +69,21 @@
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="15" />
-    <property name="RequestMappingsPanelWidth1" value="15" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.28653628" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloud-alibaba-feign-consumer/src/main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -106,15 +133,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="cloud-alibaba-nacos-provider" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aladdin.cloud.alibaba.NacosProviderApplication" />
+    <configuration name="NacosConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-alibaba-nacos-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aladdin.cloud.alibaba.feign.nacos.NacosConsumerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NacosConsumerFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-feign-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aladdin.cloud.alibaba.feign.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aladdin.cloud.alibaba.feign.consumer.NacosConsumerFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosConsumerFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-alibaba-consumer-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aladdin.cloud.alibaba.feign.consumer.NacosConsumerFeignApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-nacos-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aladdin.cloud.alibaba.nacos.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aladdin.cloud.alibaba.nacos.provider.NacosProviderApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <module name="cloud-alibaba-nacos-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aladdin.cloud.alibaba.feign.nacos.provider.NacosProviderApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.cloud-alibaba-dependencies [clean...]" />
+      <item itemvalue="Spring Boot.NacosProviderApplication" />
+      <item itemvalue="Spring Boot.NacosConsumerApplication" />
+      <item itemvalue="Spring Boot.NacosConsumerFeignApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.NacosProviderApplication" />
+        <item itemvalue="Spring Boot.NacosConsumerFeignApplication" />
         <item itemvalue="Spring Boot.NacosConsumerApplication" />
       </list>
     </recent_temporary>
@@ -123,7 +202,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.17588565" />
+          <option name="contentProportion" value="0.21006836" />
           <treeState>
             <expand>
               <path>
@@ -157,64 +236,110 @@
       <workItem from="1582442599714" duration="24000" />
       <workItem from="1582442627304" duration="640000" />
       <workItem from="1582443316936" duration="4010000" />
+      <workItem from="1582511686016" duration="7267000" />
+      <workItem from="1582523701829" duration="333000" />
+      <workItem from="1582524041613" duration="1384000" />
+      <workItem from="1582533851601" duration="2481000" />
+      <workItem from="1582558915946" duration="211000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/cloud-alibaba-nacos-provider" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582443311402">
+    <state x="429" y="190" key="#Project_Structure" timestamp="1582534207180">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582443311402" />
-    <state width="1325" height="405" key="GridCell.Tab.0.bottom" timestamp="1582464857753">
+    <state x="429" y="190" key="#Project_Structure/0.0.1680.1050@0.0.1680.1050" timestamp="1582534207180" />
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582558958931">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857753" />
-    <state width="1325" height="580" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819871" />
-    <state width="1325" height="405" key="GridCell.Tab.0.center" timestamp="1582464857752">
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582558958931" />
+    <state x="0" y="101" key="CommitChangelistDialog2" timestamp="1582559553764">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857752" />
-    <state width="1325" height="580" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819870" />
-    <state width="1325" height="405" key="GridCell.Tab.0.left" timestamp="1582464857752">
+    <state x="0" y="101" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582559553764" />
+    <state x="168" y="72" key="DiffContextDialog" timestamp="1582559530186">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857752" />
-    <state width="1325" height="580" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819869" />
-    <state width="1325" height="405" key="GridCell.Tab.0.right" timestamp="1582464857753">
+    <state x="168" y="72" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582559530186" />
+    <state width="1270" height="677" key="GridCell.Tab.0.bottom" timestamp="1582559418782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857753" />
-    <state width="1325" height="580" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819871" />
-    <state width="1325" height="405" key="GridCell.Tab.1.bottom" timestamp="1582464857755">
+    <state width="1270" height="677" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418782" />
+    <state width="1270" height="411" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603803" />
+    <state width="1270" height="677" key="GridCell.Tab.0.center" timestamp="1582559418781">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857755" />
-    <state width="1325" height="580" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819874" />
-    <state width="1325" height="405" key="GridCell.Tab.1.center" timestamp="1582464857754">
+    <state width="1270" height="677" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418781" />
+    <state width="1270" height="411" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603800" />
+    <state width="1270" height="677" key="GridCell.Tab.0.left" timestamp="1582559418780">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857754" />
-    <state width="1325" height="580" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819873" />
-    <state width="1325" height="405" key="GridCell.Tab.1.left" timestamp="1582464857754">
+    <state width="1270" height="677" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418780" />
+    <state width="1270" height="411" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603786" />
+    <state width="1270" height="677" key="GridCell.Tab.0.right" timestamp="1582559418782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857754" />
-    <state width="1325" height="580" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819872" />
-    <state width="1325" height="405" key="GridCell.Tab.1.right" timestamp="1582464857754">
+    <state width="1270" height="677" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418782" />
+    <state width="1270" height="411" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603802" />
+    <state width="1270" height="677" key="GridCell.Tab.1.bottom" timestamp="1582559418784">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1325" height="405" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582464857754" />
-    <state width="1325" height="580" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582455819873" />
-    <state x="328" y="106" key="SettingsEditor" timestamp="1582454701958">
+    <state width="1270" height="677" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418784" />
+    <state width="1270" height="411" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603810" />
+    <state width="1270" height="677" key="GridCell.Tab.1.center" timestamp="1582559418783">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="328" y="106" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582454701958" />
-    <state x="217" y="229" key="new project wizard" timestamp="1582454448634">
+    <state width="1270" height="677" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418783" />
+    <state width="1270" height="411" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603808" />
+    <state width="1270" height="677" key="GridCell.Tab.1.left" timestamp="1582559418782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="217" y="229" key="new project wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1582454448634" />
+    <state width="1270" height="677" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418782" />
+    <state width="1270" height="411" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603805" />
+    <state width="1270" height="677" key="GridCell.Tab.1.right" timestamp="1582559418783">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1270" height="677" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582559418783" />
+    <state width="1270" height="411" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582535603809" />
+    <state width="1298" height="243" key="GridCell.Tab.2.bottom" timestamp="1582524279464">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1298" height="243" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582524279464" />
+    <state width="1298" height="243" key="GridCell.Tab.2.center" timestamp="1582524279462">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1298" height="243" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582524279462" />
+    <state width="1298" height="243" key="GridCell.Tab.2.left" timestamp="1582524279461">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1298" height="243" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582524279461" />
+    <state width="1298" height="243" key="GridCell.Tab.2.right" timestamp="1582524279463">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1298" height="243" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582524279463" />
+    <state x="328" y="106" key="SettingsEditor" timestamp="1582533865305">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="328" y="106" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582533865305" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1582559566972">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582559566972" />
+    <state x="217" y="229" key="new project wizard" timestamp="1582512644517">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="217" y="229" key="new project wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1582512644517" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1582518135385">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582518135385" />
   </component>
 </project>
