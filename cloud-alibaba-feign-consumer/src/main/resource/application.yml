@@ -14,3 +14,9 @@ management:
     web:
       exposure:
         include: "*"
+NacosProviderService:
+  ribbon:
+    listOfServers: http://localhost:9001
+ribbon:
+  eureka:
+    enabled: false
