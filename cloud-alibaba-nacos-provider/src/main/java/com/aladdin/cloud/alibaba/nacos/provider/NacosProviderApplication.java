@@ -1,4 +1,4 @@
-package com.aladdin.cloud.alibaba;
+package com.aladdin.cloud.alibaba.nacos.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

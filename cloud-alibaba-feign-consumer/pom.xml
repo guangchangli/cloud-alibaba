@@ -9,9 +9,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cloud-alibaba-nacos-consumer</artifactId>
+    <artifactId>cloud-alibaba-feign-consumer</artifactId>
 
-    <name>cloud-alibaba-nacos-consumer</name>
+    <name>cloud-alibaba-feign-consumer</name>
 
     <dependencies>
         <!-- Spring Boot Begin -->
@@ -35,6 +35,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!-- Spring Cloud End -->
     </dependencies>
 
@@ -44,7 +48,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.aladdin.cloud.alibaba.nacos.consumer.NacosConsumerApplication</mainClass>
+                    <mainClass>com.aladdin.cloud.alibaba.feign.consumer.NacosConsumerFeignApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

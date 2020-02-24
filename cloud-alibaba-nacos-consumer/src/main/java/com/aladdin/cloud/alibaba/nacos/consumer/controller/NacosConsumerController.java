@@ -4,26 +4,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author lgc
- * @create 2020-02-23
- **/
 @RestController
 public class NacosConsumerController {
 
     @Autowired
-    RestTemplate restTemplate;
-    @Autowired
-    LoadBalancerClient loadBalancerClient;
-    @Value("${spring.application.name}")
-    String appName;
+    private LoadBalancerClient loadBalancerClient;
 
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @Value("${spring.application.name}")
+    private String appName;
+
+    @GetMapping(value = "/echo/app/name")
     public String echo() {
-        ServiceInstance instance = loadBalancerClient.choose("nacos-provider-a");
-        String url = String.format("http://%s:%s/echo%s", instance.getHost(), instance.getPort(), appName);
+        //使用 LoadBalanceClient 和 RestTemplate 结合的方式来访问
+        ServiceInstance serviceInstance = loadBalancerClient.choose("nacos-provider");
+        String url = String.format("http://%s:%s/echo/%s", serviceInstance.getHost(), serviceInstance.getPort(), appName);
         return restTemplate.getForObject(url, String.class);
     }
 }

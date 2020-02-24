@@ -19,6 +19,7 @@
     <modules>
         <module>../cloud-alibaba-nacos-provider</module>
         <module>../cloud-alibaba-nacos-consumer</module>
+        <module>../cloud-alibaba-feign-consumer</module>
     </modules>
 
     <properties>
