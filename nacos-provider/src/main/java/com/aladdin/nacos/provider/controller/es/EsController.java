@@ -1,4 +1,4 @@
-package com.aladdin.nacos.provider.controller;
+package com.aladdin.nacos.provider.controller.es;
 
 import com.aladdin.nacos.provider.entity.Book;
 import com.aladdin.nacos.provider.repository.BookRepository;
