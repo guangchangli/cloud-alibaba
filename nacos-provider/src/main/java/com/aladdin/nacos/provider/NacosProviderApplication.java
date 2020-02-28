@@ -1,6 +1,7 @@
 package com.aladdin.nacos.provider;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -17,7 +18,9 @@ public class NacosProviderApplication {
     private String appName;
 
     public static void main(String[] args) {
-        SpringApplication.run(NacosProviderApplication.class, args);
+        SpringApplication springApplication = new SpringApplication(NacosProviderApplication.class);
+        springApplication.setBannerMode(Banner.Mode.OFF);
+        springApplication.run(args);
     }
 
 
