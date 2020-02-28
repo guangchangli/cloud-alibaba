@@ -13,8 +13,8 @@ spring:
       cluster-name: elasticsearch_lgc
       cluster-nodes: localhost:9300
   mail:
-    username:
-    password:
+    username: ceryss@126.com
+    password: ceryss126
     host: smtp.126.com
 server:
   port: 9001
