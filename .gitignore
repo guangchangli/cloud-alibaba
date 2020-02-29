@@ -17,4 +17,5 @@ out
 gen
 logs
 target
+.mvn
 
