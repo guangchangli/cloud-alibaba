@@ -1,0 +1,29 @@
+server:
+  port: 9201
+
+eureka:
+  client:
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    registerWithEureka: false
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+    #表示eureka client间隔多久去拉取服务器注册信息,默认为30秒
+    registry-fetch-interval-seconds: 10
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: eureka-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true

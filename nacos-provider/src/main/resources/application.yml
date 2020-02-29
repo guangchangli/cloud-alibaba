@@ -16,6 +16,15 @@ spring:
     username: ceryss@126.com
     password: ceryss126
     host: smtp.126.com
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/lgc?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    devtools: Chang0.com
+      restart:
+        additional-paths: 'src/main/java'
+        enabled: 'true'
 server:
   port: 9001
 
@@ -29,11 +38,5 @@ management:
       show-details: always
     shutdown:
       enabled: true
-#knife4j:
-#  markdowns: classpath:markdown/*
-#  basic:
-#    enable: false
-#    username: zhangsan
-#    password: 123456
 logging:
   config: classpath:logback-spring.xml

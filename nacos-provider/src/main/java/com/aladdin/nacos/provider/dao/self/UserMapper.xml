@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aladdin.nacos.provider.dao.self.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.example.recordboot.entity.TblOrder" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="order_code" property="orderCode" jdbcType="VARCHAR" />
+        <result column="user_id" property="userId" jdbcType="INTEGER" />
+        <result column="amount" property="amount" jdbcType="INTEGER" />
+        <result column="uptime" property="uptime" jdbcType="TIMESTAMP" />
+        <result column="text" property="text" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    id, order_code, user_id, amount, uptime, text
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from tbl_order
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tbl_order
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.example.recordboot.entity.TblOrder" >
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tbl_order (order_code, user_id, amount,
+        uptime, text)
+        values (#{orderCode,jdbcType=VARCHAR}, #{userId,jdbcType=INTEGER}, #{amount,jdbcType=INTEGER},
+        #{uptime,jdbcType=TIMESTAMP}, #{text,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" parameterType="com.example.recordboot.entity.TblOrder" >
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tbl_order
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="orderCode != null" >
+                order_code,
+            </if>
+            <if test="userId != null" >
+                user_id,
+            </if>
+            <if test="amount != null" >
+                amount,
+            </if>
+            <if test="uptime != null" >
+                uptime,
+            </if>
+            <if test="text != null" >
+                text,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="orderCode != null" >
+                #{orderCode,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null" >
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="amount != null" >
+                #{amount,jdbcType=INTEGER},
+            </if>
+            <if test="uptime != null" >
+                #{uptime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="text != null" >
+                #{text,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.recordboot.entity.TblOrder" >
+        update tbl_order
+        <set >
+            <if test="orderCode != null" >
+                order_code = #{orderCode,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null" >
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="amount != null" >
+                amount = #{amount,jdbcType=INTEGER},
+            </if>
+            <if test="uptime != null" >
+                uptime = #{uptime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="text != null" >
+                text = #{text,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.recordboot.entity.TblOrder" >
+    update tbl_order
+    set order_code = #{orderCode,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=INTEGER},
+      amount = #{amount,jdbcType=INTEGER},
+      uptime = #{uptime,jdbcType=TIMESTAMP},
+      text = #{text,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
