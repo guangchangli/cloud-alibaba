@@ -12,7 +12,10 @@ spring:
     elasticsearch:
       cluster-name: elasticsearch_lgc
       cluster-nodes: localhost:9300
-
+  mail:
+    username: ceryss@126.com
+    password: ceryss126
+    host: smtp.126.com
 server:
   port: 9001
 
@@ -21,3 +24,16 @@ management:
     web:
       exposure:
         include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+#knife4j:
+#  markdowns: classpath:markdown/*
+#  basic:
+#    enable: false
+#    username: zhangsan
+#    password: 123456
+logging:
+  config: classpath:logback-spring.xml
