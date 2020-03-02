@@ -12,7 +12,6 @@ import javax.validation.ValidatorFactory;
 /***
  * 入参服务端校验
  */
-@Configuration
 public class HibernateValidateConfig {
 
     @Bean

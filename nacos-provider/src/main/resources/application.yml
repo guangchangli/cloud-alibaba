@@ -18,13 +18,9 @@ spring:
     host: smtp.126.com
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: 123456
     url: jdbc:mysql://127.0.0.1:3306/lgc?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    devtools: Chang0.com
-      restart:
-        additional-paths: 'src/main/java'
-        enabled: 'true'
+    password: Chang0.com
 server:
   port: 9001
 

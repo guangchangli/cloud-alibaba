@@ -8,7 +8,7 @@ import java.util.Locale;
 
 @RestController
 @RequestMapping("/cors")
-public class LocaleController {
+public class CorsController {
 
     @GetMapping("/test")
     public String locale(Locale locale) {

@@ -1,5 +1,6 @@
 package com.aladdin.nacos.provider;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @EnableAsync
 @EnableScheduling
+@MapperScan(basePackages = {"com.aladdin.nacos.provider.dao"})
 public class NacosProviderApplication {
     @Value("${server.port}")
     private String port;
