@@ -15,4 +15,6 @@ public class NacosConsumerApplication {
         springApplication.run(args);
     }
 
+
+
 }
