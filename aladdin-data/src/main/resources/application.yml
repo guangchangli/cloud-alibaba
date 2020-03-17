@@ -1,0 +1,20 @@
+server:
+  port: 9306
+spring:
+  application:
+    name: aladdin-data
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: Chang0.com
+    url: jdbc:mysql://127.0.0.1:3306/data?useUnicode=true&characterEncoding=utf8
+    username: root
+  jpa:
+    database: MySQL
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+mybatis:
+  type-aliases-package: com.aladdin.data.entity
+
