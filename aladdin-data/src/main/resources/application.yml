@@ -1,6 +1,9 @@
 server:
   port: 9306
 spring:
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/data"
   application:
     name: aladdin-data
   datasource:
