@@ -1,10 +1,16 @@
 package com.aladdin.data.common;
 
 import com.alibaba.fastjson.JSONObject;
+import lombok.Data;
+import org.springframework.http.HttpStatus;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author lgc
+ */
+@Data
 public class JsonResult {
 
     /**
@@ -57,6 +63,12 @@ public class JsonResult {
         this.success = success;
         this.code = code;
         this.msg = msg;
+        this.data = data;
+    }
+    public JsonResult(Object data) {
+        this.success = true;
+        this.code = HttpStatus.OK.value();
+        this.msg = "success";
         this.data = data;
     }
 

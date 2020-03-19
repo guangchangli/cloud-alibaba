@@ -18,8 +18,9 @@ import java.util.List;
 /**
  * @author lgc
  */
+@RestController
 @RequestMapping(value = "/user/mongodb")
-public class UserController {
+public class UserMongodbController {
 
     @Autowired
     private MongoTemplate mongoTemplate;
@@ -27,7 +28,7 @@ public class UserController {
     @GetMapping(value = "/list")
     public JsonResult list() {
         List<User> userList = mongoTemplate.findAll(User.class, "user");
-        return new JsonResult(true, userList);
+        return new JsonResult(userList);
     }
 
     @PostMapping(value = "/add")

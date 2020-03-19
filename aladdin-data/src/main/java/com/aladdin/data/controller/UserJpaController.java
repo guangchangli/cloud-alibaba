@@ -18,7 +18,6 @@ public class UserJpaController {
 
     @GetMapping("/list")
     private String getUserById() {
-
         List<User> userList = userService.findAll();
         return JSON.toJSONString(userList);
     }
