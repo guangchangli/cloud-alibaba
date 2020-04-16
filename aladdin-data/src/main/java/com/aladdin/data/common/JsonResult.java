@@ -72,7 +72,6 @@ public class JsonResult {
         this.data = data;
     }
 
-    // ... ignore getter and setter methods
 
     public void put(String key, Object value) {
         if (data == null) {
